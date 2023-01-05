@@ -1,0 +1,8 @@
+﻿Position,Level,Salary
+JE,1,10000
+JC,2,20000
+Manaer,3,30000
+SE,4,40000
+CTO,5,50000
+CEO,6,60000
+Founder,7,100000

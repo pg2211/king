@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+var regName=/^[a-zA-Z]+[a-zA-Z]+$/;
+var fname=document.getElementById("txtfname").value;
+var lname=document.getElementById("txtlname").value;
+var age=document.getElementById("txtage").value;
+ 
+
+if(age<18||age>50)
+alert("student age must be 18 to 50");
+
+if((!regName.test(fname)) || (!regName.test(lname)))
+{
+alert("invalid name is given");
+}
+else
+{
+alert("valid name is given");
+}
+
+
+}
+</script>
+</head>
+<body>
+<form>
+enter student first name
+<input type="text" name="txtfname" id="txtfname"><br>
+enter student last name
+<input type="text" name="txtlname" id="txtlname"><br>
+enter student age
+<input type="text" name="txtage" id="txtage"><br>
+<input type="button" value="validate" onclick="validate()">
+</form>
+</body>
+</html>
